@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color(0xffc2185b),
+        backgroundColor: Color(0xffff6699),
         body: SafeArea(
             // Container can only have 1 child
             child: Column(
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'SourceSansPro',
                 fontSize: 20.0,
-                color: Color(0xfff8bbd0),
+                color: Color(0xffffb3cc),
                 letterSpacing: 2.5,
                 fontWeight: FontWeight.bold,
               ),
@@ -54,7 +54,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Card(
-              color: Color(0xfff8bbd0),
+              color: Color(0xffffb3cc),
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
               child: ListTile(
                 leading: Icon(
@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Card(
-              color: Color(0xfff8bbd0),
+              color: Color(0xffffb3cc),
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
               child: ListTile(
                 leading: Icon(
