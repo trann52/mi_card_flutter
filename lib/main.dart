@@ -19,41 +19,15 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          // Container can only have 1 child
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                width: 100.0,
-                color: Color(0xffff0000),
-                child: Text('Container 1'),
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Color(0xffffcc00),
-                    child: Text('Container 2'),
-                  ),
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Color(0xff33cc33),
-                    child: Text('Container 2.5'),
-                  ),
-                ],
-              ),
-              Container(
-                width: 100.0,
-                color: Color(0xff3399ff),
-                child: Text('Container 3'),
-              ),
-            ],
-          ),
-        ),
+            // Container can only have 1 child
+            child: Column(
+          children: [
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/kitsune.jpg'),
+            ),
+          ],
+        )),
       ),
     );
   }
