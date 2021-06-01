@@ -17,10 +17,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color(0xffff3399),
+        backgroundColor: Color(0xffc2185b),
         body: SafeArea(
             // Container can only have 1 child
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 50.0,
@@ -40,10 +41,52 @@ class MyApp extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'SourceSansPro',
                 fontSize: 20.0,
-                color: Color(0xffffffff),
+                color: Color(0xfff8bbd0),
+                letterSpacing: 2.5,
                 fontWeight: FontWeight.bold,
               ),
             ),
+            SizedBox(
+              height: 20.0,
+              width: 150.0,
+              child: Divider(
+                color: Color(0xffbdbdbd),
+              ),
+            ),
+            Card(
+              color: Color(0xfff8bbd0),
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Color(0xff212121),
+                ),
+                title: Text(
+                  '+447 592 801 761',
+                  style: TextStyle(
+                      color: Color(0xff212121),
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0),
+                ),
+              ),
+            ),
+            Card(
+              color: Color(0xfff8bbd0),
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Color(0xff212121),
+                ),
+                title: Text(
+                  'tran.nicky52@gmail.com',
+                  style: TextStyle(
+                      color: Color(0xff212121),
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0),
+                ),
+              ),
+            )
           ],
         )),
       ),
