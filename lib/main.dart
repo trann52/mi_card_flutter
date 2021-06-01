@@ -17,14 +17,32 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Color(0xffff3399),
         body: SafeArea(
             // Container can only have 1 child
             child: Column(
           children: [
             CircleAvatar(
               radius: 50.0,
-              backgroundImage: AssetImage('images/kitsune.jpg'),
+              backgroundImage: AssetImage('images/me.jpg'),
+            ),
+            Text(
+              'Nicky Tran',
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+                fontSize: 40.0,
+                color: Color(0xffffffff),
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              'DIGITAL ANALYST',
+              style: TextStyle(
+                fontFamily: 'SourceSansPro',
+                fontSize: 20.0,
+                color: Color(0xffffffff),
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ],
         )),
